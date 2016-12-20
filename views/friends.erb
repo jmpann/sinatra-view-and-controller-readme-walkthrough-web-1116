@@ -9,7 +9,11 @@
   <h1> My Super Cool Friends List </h1>
 
   <!-- Iterate through the @friends array here to display each item in its own <h2> tag -->
-
-
+  <% @friends.each do |friend| %>
+    <h2><%=friend%></h2>
+  <% end %>
+  <!-- iterate ruby code in <% %> -->
+  <!-- what you want to display in the html tag. Everything between start and end is kept in scope. @friends is calling the instance for this view defined in the controller -->
+  <!-- end iterations with ruby code in <% %> -->
  </body>
 </html>
